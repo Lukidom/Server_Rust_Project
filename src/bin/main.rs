@@ -19,6 +19,8 @@ fn main() {
                 handle_connection(stream);
             });
         }
+
+        print!("Shutting down.\n");
 }
 fn handle_connection(mut stream: TcpStream) {
     let mut buffer = [0; 1024];
